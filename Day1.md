@@ -53,3 +53,49 @@ fruits.clear();
 ```
 System.out.println(fruits.size());
 ```
+
+# 2-D Array
+
+1. Declaring of 2-D Array
+```
+int[][] numbers = new int[5][3];
+```
+2. Accessing elements and initalizing it.
+```
+numbers[0][0] = 3;
+numbers[0][1] = 4;
+numbers[1][0] = 5;
+numbers[1][1] = 6;
+```
+3. Initialization of 2-D array in a single line.
+```
+int[][] num = {{1,2,},{4,5}};
+```
+4. Printing Arrays row by row.
+```
+for(int i=0;i<2;i++) {
+  for (int j=0;j<2;j++) {
+    System.out.print(num[i][j] + " ");
+	}
+	System.out.println();
+}
+```
+5. Printing Array column by column
+```
+for(int i=0;i<2;i++) {
+  for (int j=0;j<2;j++) {
+    System.out.print(num[j][i]+ " ");
+	}
+	System.out.println();
+}
+```
+6. Printing Arrays using toString() method.
+```
+System.out.println(Arrays.toString(num));
+```
+It will Print the Array but not in the string representation means it will only print the reference of the arrays.
+7. Printing Arrays in string representation using deepToString() method.
+```
+System.out.println(Arrays.deepToString(num));
+```
+It will print all the array.
