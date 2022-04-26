@@ -54,7 +54,7 @@ fruits.clear();
 System.out.println(fruits.size());
 ```
 
-# 2-D Array
+## 2-D Array
 
 1. Declaring of 2-D Array
 ```
