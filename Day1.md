@@ -99,3 +99,15 @@ It will Print the Array but not in the string representation means it will only 
 System.out.println(Arrays.deepToString(num));
 ```
 It will print all the array.
+8. Ragged arrays: These are the types of arrays in which rows length are unequal for example: {{1,2,3,4,5}, {6,4}, {2,4,6,8}}. Here length of each array is different.
+9. To Print the Ragged Array we use this code.
+```
+static void printArray(int[][] array) {
+	for(int i=0;i<array.length;i++) {
+		for(int j=0;i<array[i].length;j++) {
+			System.out.print(array[i][j]);
+		}
+		System.out.println();
+	}
+}
+```
