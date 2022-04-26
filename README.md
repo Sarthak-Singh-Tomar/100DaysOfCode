@@ -1,4 +1,6 @@
 # 100DaysOfCode
 
 ## Day1:
-1. Learned about Wrapper class in Java and also its autoboxing and unboxing.
+1. Learnt about Wrapper class in Java and also its autoboxing and unboxing.
+2. Gathered all information about ArrayList used in Java with all CRUD operations.
+3. Learnt about 2-D array.
