@@ -25,3 +25,4 @@
       (b). Ignore leading constant
 6. How do we know which terms are lower order?
 ![image](https://user-images.githubusercontent.com/86265843/165503325-0beca664-8dc0-4f59-a99b-016c704a5f08.png)
+
