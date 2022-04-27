@@ -5,3 +5,10 @@
 2. When we do analysis of algorithms we always talk about sizes of input which are larger than or equal to zero, Because your input size can never be zero.
 3. The time taken by functions should also be greater than zero because our algorithm or program can never take negative time.
 4. Scenario: Jab me aur mera friend apna-apna program run karte hain own machine par to kis ka program fast hoga? mera friend ek fast machine par apna progam run kar raha hain and me ek slow machine par, so low inputs par mere friend ka program fast run karega but we will see that after at certain value of n input our program will run fast as compare to our friends program.
+
+
+## Types of Graph
+1. y = mx + c - straight line
+2. y^2 = 4ax - Horizontal parabola
+3. x^2 = 4ay - Vertical parabola
+4. xy = c - hyperbola
