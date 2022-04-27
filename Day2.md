@@ -104,3 +104,18 @@ void fun(int n) {
 }
 ```
 work: O(nlogn) + O(n^2) = O(n^2)
+
+## Analysis of Recursion
+1. In recursion funciton we don't have any loops to count how many operations we are doing.
+2. So what we do to solve recursive solution is we first write recurrence relation.
+Writing recurrence relation:
+```
+void fun(int n) {
+  if(n<=0) {
+    return;
+  }
+  print("abc");
+  fun(n/2);
+  fun(n/2);
+}
+```
