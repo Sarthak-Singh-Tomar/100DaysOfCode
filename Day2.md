@@ -32,3 +32,66 @@
 3. Worst case is something we do most of the time - we try to find out what is the case for which our algorithm is going to take maximum time.
 4. Below three are the most used mathematical notations used to represent order of growth and this function represent the time taken by the algo.
 ![image](https://user-images.githubusercontent.com/86265843/165509570-01a1ce89-584c-4a17-993e-828830b84e92.png)
+
+## Analysis of Common loops
+for(int i=0;i<n;i=i+c) {
+  //some O(1) work
+}
+Order of Growth: n/c =  O(n)
+
+for(int i=n;i>0;i=i-c) {
+  //some O(1) work
+}
+Order of Growth: n/c = O(n)
+
+for(int i=1;i<n;i=i*c) {
+  //some O(1) work
+}
+Order of Growth: logn+1 = O(logn)
+Note: Base of log does not matter.
+
+for(int i=n;i>1;i=i/c) {
+  //some O(1) work
+}
+Order of Growth: O(logn)
+
+for(int i=2;i<n;i=pow(i,c)) {
+  //some O(1) work
+}
+Order of Growth: lognlogn+1 = O(lognlogn)
+
+void fun(int n) {
+  for(int i= 0;i<n;i++) {
+    //some O(1) work
+  }
+  for(int i=1;i<n;i=i*2) {
+    //some O(1) work
+  }
+  for(int i=1;i<100;i++) {
+    //some O(1) work
+  }
+}
+work: O(n) + O(logn) + O(1) = O(n)
+
+void fun(int n) {
+  for(int i=0;i<n;i++) {
+    for(int j=1;j<n;j=j*2) {
+      //some O(1) work
+    }
+  }
+}
+work: O(n) * O(logn) = O(nlogn)
+
+void fun(int n) {
+  for(int i=0;i<n;i++) {
+    for(int j=1;j<n;j=j*2) {
+      //some O(1) work
+    }
+  }
+  for(int i=0;i<n;i++) {
+    for(int j=1;j<n;j++) {
+      //some O(1) work
+    }
+  }
+}
+work: O(nlogn) + O(n^2) = O(n^2)
