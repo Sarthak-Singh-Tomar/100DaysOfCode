@@ -26,3 +26,9 @@
 6. How do we know which terms are lower order?
 ![image](https://user-images.githubusercontent.com/86265843/165503325-0beca664-8dc0-4f59-a99b-016c704a5f08.png)
 
+## Best, Average and Worst cases & Asymptotic Notation
+1. In general, when we analyse algorithms, we do not care about best case its considered as bogus.
+2. Average case, we would like to know how much average time a software is taking, but it is impractical to do.
+3. Worst case is something we do most of the time - we try to find out what is the case for which our algorithm is going to take maximum time.
+4. Below three are the most used mathematical notations used to represent order of growth and this function represent the time taken by the algo.
+![image](https://user-images.githubusercontent.com/86265843/165509570-01a1ce89-584c-4a17-993e-828830b84e92.png)
