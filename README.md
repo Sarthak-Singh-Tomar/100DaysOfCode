@@ -7,3 +7,5 @@
 4. Learnt about Context Params in J2EE.
 
 ## Day2:
+1. Introduction - Analysis of Algorithm
+2. Types of Graph.
