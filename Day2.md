@@ -119,3 +119,32 @@ void fun(int n) {
   fun(n/2);
 }
 ```
+Recurrence relation: T(n) = T(n/2) + T(n/2) + O(1) = 2T(n/2) + O(1)
+                     T(0) = O(1)
+
+```
+void fun(int n) {
+  if(n<=0) {
+    return;
+  }
+  for(int i=0;i<n;i++) {
+    print("abc");
+  }
+  fun(n/2);
+  fun(n/3);
+}
+```
+relation: T(n) = T(n/2) + T(n/3) + O(n)
+          T(0) = O(1)
+
+```
+void fun(int n) {
+  if(n<=1) {
+    return;
+  }
+  print("abc");
+  fun(n-1);
+}
+```
+relation - T(n) = T(n-1) + O(1)
+           T(1) = O(1)
