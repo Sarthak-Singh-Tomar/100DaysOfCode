@@ -148,3 +148,75 @@ void fun(int n) {
 ```
 relation - T(n) = T(n-1) + O(1)
            T(1) = O(1)
+
+## Space Complexity
+1. Space complexity is defined as order of growth of memory (or RAM) space in terms of input size.
+
+```
+int getSum(int n) {
+  return n*(n+1)/2;
+}
+```
+Space complexity: O(1)
+
+```
+int getSum(int n) {
+  int sum = 0;
+  for(int i=0;i<n;i++) {
+    sum = sum +i;
+  }
+  return sum;
+}
+```
+space complexity: O(1)
+
+```
+int arraySum(int[] arr, int n) {
+  int sum = 0;
+  for(int i=0;i<n;i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+```
+space complexity: O(n)
+2. Auxilary space: Auxilary space is order of growth of extra space or temporary space that we create to solve a problem in terms of input size.
+
+```
+int arraySum(int[] arr, int n) {
+  int sum = 0;
+  for(int i=0;i<n;i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+```
+Space complexity: O(n)
+Auxilary space: O(1)
+
+3. When we talk about array problems or list problems or any problem that contain input container, they any way going to take O(n) space.
+4. Space complexity is less used and auxilary space is more used because it gives us more information
+
+```
+int fun(int n) {
+  if(n<=0) {
+    return 0;
+  }
+  return n+ fun(n-1);
+}
+```
+This program needs extra space to store function calls in a function call stack. So Auxilalry and space complexity is O(n).
+
+```
+int fib(int n) {
+  if(n==0 || n==1) {
+    return n;
+  }
+  return fib(n-1) + fib(n-2);
+}
+```
+The above program is recursion program for fibonnaci numbers. The recursion tree of this is as follows:
+![image](https://user-images.githubusercontent.com/86265843/165751067-c5bb0e8a-cc73-4b9b-8368-cf9985fcb6d9.png)
+Simple formula to find out auxilary space for any recursion: its always equal to the height of the tree - maximum length from root to leaf path.
+so Auxilary space for this fibonnacci program is O(4) or O(n).
+
