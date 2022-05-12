@@ -14,4 +14,5 @@ for(int i=1;i<=t;i++) {
 	else {
 		System.out.println("	not prime");
 	}
+}
 ```
