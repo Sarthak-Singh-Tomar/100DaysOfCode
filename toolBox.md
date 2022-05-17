@@ -9,3 +9,12 @@
 ```
 git pull origin
 ```
+2. In memory databases for testing and developement: H2 database and Apache Derby.
+3. To hard code the values in database use the following code.
+```
+List < Object Type > name = Arrays.asList(
+                            new Object("value", "value"),
+                            new Object("value", "value"),
+                            new Object("value", "value")
+                            );
+```
